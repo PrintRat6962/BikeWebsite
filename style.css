@@ -1,0 +1,220 @@
+html
+{
+    height: 100%;
+    /* You can put a background image/color in this tag */
+    /* Especially if you want to put an image with the background color. */
+}
+
+body
+{
+    background-image: linear-gradient(#FC5E55 , #FA4083)
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.container
+{
+    width: 1024px;
+    min-height: 200px; /*we need a min height for text fitting*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main 
+{
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    /* You need a min height to vertically align items */
+}
+
+.cards
+{
+    
+    display: flex; /* Helps horizontal stacking */
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+/* Be sure to scarcely add min height values */
+
+.card1
+{
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 30%;
+    min-height: 250px;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
+}
+
+.card2
+{
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 30%;
+    min-height: 250px;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
+}
+
+.card3
+{
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 30%;
+    min-height: 250px;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
+
+}
+
+.herobox1
+{
+    color: white;
+    flex: 2; 
+    padding-right: 1.5rem;
+}
+/* imagine the flex feature as a ratio when width sizing.*/
+
+.desc
+{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.herobox2
+{
+    flex: 1;
+    margin-bottom: 10px;
+}
+/* Note: to stack horizontally, div boxes muxt have a width*/
+
+.head
+{
+    min-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.title
+{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+p
+{
+    line-height: 1.75rem;
+    margin-bottom: .5rem;
+}
+
+.cards p
+{
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    margin: 10px 30px 20px 30px;
+    /* Line height controls vertical space between
+    text lines. Effects everything */
+    /* Margin order starts at top and goes clockwise. */
+    /* For two parameters it goes top-bottom, left-right */
+}
+
+.seched
+{
+    font-size: 2rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.cards a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.card1, .card2, .card3
+{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    /* All styles made here affect the classes separated by commas */
+    /* Box sizing keeps the box sizes consistent while using padding */
+}
+
+.mybutton
+{
+    background-color: white;
+    color: #FA4083;
+    padding: 11px 25px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
+    /* Block elements: pushes other block elements down to their own line */
+    /* Inline: Doesn't push, stays in the same line. */
+    /* Border radius input starts top left then clockwise order */
+    /* Parameters for shadow border are size for first 2, blur , then color. */
+    /* If there are three parameters for the box shadow, the third will be color */
+    /* w3 schools has more shadow options to experiment */
+}
+
+.mybutton:hover
+{
+    /* pseudo-class: Used for when certain conditions are met. */
+    background-color: rgb(10, 190, 10);
+    transition-duration: .25s;
+}
+
+.navbutton
+{
+    border: 1px solid white;
+    margin-left: 5px;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    /* An alternate format for borders */
+    /* border-style: solid; */
+    /* border-size: 2px; */
+}
+
+.testemonials
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tbox
+{
+    color: white;
+    width: 40%;
+    padding: 50px 35px;
+    border: 1px solid white;
+    line-height: 1.5rem;
+    margin-top: 50px;
+}
+
+/* Main image types: jgp, png, svg
+jpg: file size are small and no transparency
+png: Can use a lot of colors and transparent. Huge file sizes.
+svg: Vector scales to infinity, can look good and still have a pretty decent small file size.
+    Use it for icons and logos 
+Also reveiw how to export images from photoshop for web design*/
+
+/* Block level images vs Background images: Block level
+is seen by the browser so it is useful to have as many images in the html as possible */
+
+/* Limit the amount of h1's in the site for searching purposes */

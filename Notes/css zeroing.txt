@@ -1,0 +1,6 @@
+Basically changing the style/settting of a default style (e.x. heading 1 and heading2.
+Making them look the same is an option).
+Eric Meyers reset basically sets everything to the saem style. Handy for making everything
+into your own style.
+The Eric Meyer reset and the normalize is all in the tools folder.  
+Normalize adds consistency between browsers.

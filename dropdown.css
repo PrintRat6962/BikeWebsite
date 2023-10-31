@@ -1,0 +1,40 @@
+.navbutton
+{
+    background-color: lawngreen;
+    padding: 11px 25px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown
+{
+    display: none;
+    position: absolute;
+    /* Absolute positioning is regardless
+    of other blocks or entities*/
+    z-index: 99;
+    padding-top: 10px;
+    margin-left: -30px;
+}
+/* Turns off dropdown when not hovering */
+
+.navbutton:hover .dropdown
+{
+    display: block;
+}
+/* Remember: No space between semicolon attaches
+the attribute while space tells the computer to look for
+the attribute */
+
+.dropdown .navbutton
+{
+    background-color: cadetblue;
+}
+
+.dropdown .navbutton:hover
+{
+    background-color: pink;
+    transition-duration: 500ms;
+}
